@@ -1,7 +1,15 @@
-export default function App() {
+import { Navbar, Hero, Creativity, OfferedCourses, MobileApp, Footer } from "./index.js"
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+  <main>
+    <Navbar />
+    <Hero />
+    <Creativity />
+    <OfferedCourses />
+    <MobileApp />
+    <Footer />
+  </main>
+)};
+
+export default App
