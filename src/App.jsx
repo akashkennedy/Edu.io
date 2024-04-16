@@ -2,7 +2,7 @@ import { Navbar, Hero, Creativity, OfferedCourses, MobileApp, Footer } from "./i
 
 const App = () => {
   return (
-  <main>
+  <main className="px-10">
     <Navbar />
     <Hero />
     <Creativity />
