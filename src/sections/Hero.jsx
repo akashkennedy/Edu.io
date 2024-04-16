@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="flex flex-col justify-between gap-5">
       <img src={flake1} alt="" className="h-18 w-24 ml-5"/>
         <h2 className="text-7xl">There is a New Way to Learn More...</h2>
-        <p className="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, assumenda saepe! Hic accusantium velit sapiente excepturi .</p>
+        <p className="info-text w-4/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, assumenda saepe! Hic accusantium velit sapiente excepturi.</p>
         <div className="flex gap-5">
         <Button label="Sign Up"/>
         <Button label="Log In"/> 

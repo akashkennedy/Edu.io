@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        black: "00160A",
-        teal: "#64FCD9",
+        black: "#00160A",
+        cyan: "#64FCD9",
       },
     },
   },
