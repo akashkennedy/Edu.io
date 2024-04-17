@@ -27,7 +27,7 @@ a {
     text-decoration-thickness: 7px;
     text-decoration-color: #64FCD9;
   } */
-  .button-shadow {
+  .card-shadow {
     box-shadow: 5px 4px 8px 0px rgba(0,0,0,0.74);
   }
 }
