@@ -2,7 +2,7 @@ import HamburgerMenu from "../components/HamburgerMenu"
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center py-5">
+    <header className="flex justify-between items-center py-5 px-10">
       <h1>Edu.io</h1>
       <nav className="font-normal text-lg">
         <ul className="flex justify-between items-center gap-10">

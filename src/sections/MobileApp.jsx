@@ -5,7 +5,7 @@ import flake3 from "../assets/home/flakes-3.png"
 
 const MobileApp = () => {
   return (
-    <section className="flex items-center justify-between pt-10">
+    <section className="flex items-center justify-between pt-10 px-10">
       <div className="flex flex-col gap-10">
         <img src={flake1} alt="" className="h-18 w-24 ml-32"/>
         <h2 className="text-7xl">Download Our Mobile App...</h2>

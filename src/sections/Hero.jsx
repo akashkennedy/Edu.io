@@ -6,7 +6,7 @@ import flake2 from "../assets/home/flakes-2.png"
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-between">
+    <section className="flex items-center justify-between px-10">
       <div className="flex flex-col justify-between gap-5">
       <img src={flake1} alt="" className="h-18 w-24 ml-5"/>
         <h2 className="text-7xl">There is a New Way to Learn More...</h2>

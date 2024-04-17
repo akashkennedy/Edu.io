@@ -4,12 +4,12 @@ const CourseData = [
         src: "src/assets/home/science.png",
         title: "Chemistry",
     },{
-        id: 1,
+        id: 2,
         src: "src/assets/home/music.png",
         title: "Music",
     },
     {
-        id: 1,
+        id: 3,
         src: "src/assets/home/health.png",
         title: "Pharmacy",
     }

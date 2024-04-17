@@ -12,7 +12,7 @@ h2 {
   @apply text-2xl font-medium;
 }
 h3 {
-  @apply text-lg;
+  @apply text-2xl font-medium;
 }
 a {
   @apply no-underline cursor-pointer;

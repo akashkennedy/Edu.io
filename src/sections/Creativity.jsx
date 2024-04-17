@@ -5,7 +5,7 @@ import flake2 from "../assets/home/flakes-2.png"
 
 const Creativity = () => {
   return (
-    <section className="flex justify-between items-center gap-10">
+    <section className="flex justify-between items-center gap-10 px-10">
       <img src={Artist} alt="Artist" className="w-full"/>
       <div className="flex flex-col justify-between gap-10">
         <img src={flake1} alt="" className="h-18 w-24 mr-5" />

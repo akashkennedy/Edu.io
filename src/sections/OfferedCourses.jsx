@@ -6,7 +6,7 @@ import CourseData from "../constants/CourseData.js"
 
 const OfferedCourses = () => {
   return (
-    <section className="h-screen flex flex-col items-center justify-between relative pt-16">
+    <section className="h-screen flex flex-col items-center justify-between relative pt-16 px-10">
       <img src={flake3} className="h-18 w-24 absolute bottom-7 right-32"/>
       <img src={flake3} className="h-18 w-24 absolute left-10 top-28"/>
       <div>
