@@ -1,4 +1,6 @@
 import { Navbar, Hero, Creativity, OfferedCourses, MobileApp, Footer } from "./index.js"
+import ContactUs from "./pages/ContactUs.jsx";
+
 
 const App = () => {
   return (
@@ -9,6 +11,7 @@ const App = () => {
     <OfferedCourses />
     <MobileApp />
     <Footer />
+    <ContactUs />
   </main>
 )};
 
