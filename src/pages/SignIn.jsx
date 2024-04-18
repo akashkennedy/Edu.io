@@ -6,7 +6,7 @@ import flake3 from "../assets/home/flakes-3.png";
 
 const SignIn = () => {
   return (
-    <section className="flex items-center justify-between px-10 h-screen">
+    <section className="flex items-center justify-between px-10 h-screen overflow-hidden">
       <div className="flex flex-col items-center justify-evenly gap-10 h-full pt-20">
         <div className="flex flex-col items-center gap-5">
           <h2 className="text-5xl font-semibold mb-8">Sign In</h2>
@@ -24,7 +24,7 @@ const SignIn = () => {
           />
           <Button label="Continue" className="w-full" />
           <div>
-            <p className="font-normal">Don't have an Account?</p>{" "}
+            <p className="font-normal">Don't have an Account?</p>
             <a href="#">
               <span className="block font-bold text-center underline">
                 Sign Up
