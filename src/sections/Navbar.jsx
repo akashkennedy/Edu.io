@@ -1,4 +1,6 @@
-import HamburgerMenu from "../components/HamburgerMenu"
+import HamburgerMenu from "../components/HamburgerMenu";
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -6,13 +8,23 @@ const Navbar = () => {
       <h1>Edu.io</h1>
       <nav className="font-normal text-lg">
         <ul className="flex justify-between items-center gap-10">
-            <li><a href="#" className="active">Home</a></li>
-            <li><a href="#">Teachers</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Sign In</a></li>
+          <li>
+            <NavLink to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/teachers">Teachers</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contactus">Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/signin">Sign In</NavLink>
+          </li>
         </ul>
       </nav>
-      <HamburgerMenu className="hidden"/>
+      <HamburgerMenu className="hidden" />
     </header>
   );
 };
