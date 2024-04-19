@@ -25,7 +25,7 @@ export const teachers = [
     src: "src/assets/teachers/smith.png",
   },
   {
-    id: 1,
+    id: 6,
     name: "Corat",
     src: "src/assets/teachers/corat.png",
   },
