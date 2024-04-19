@@ -7,8 +7,8 @@ import flake3 from "../assets/home/flakes-3.png";
 const SignIn = () => {
   return (
     <section className="flex items-center justify-between px-10 h-screen overflow-hidden">
-      <div className="flex flex-col items-center justify-evenly gap-10 h-full pt-20">
-        <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center justify-evenly gap-10 h-full ml-20">
+        <div className="flex flex-col items-center gap-5 border-2 border-black rounded-lg p-10 card-shadow">
           <h2 className="text-5xl font-semibold mb-8">Sign In</h2>
           <input
             type="text"
@@ -20,7 +20,7 @@ const SignIn = () => {
             type="email"
             required
             className="block  border-2 border-black rounded-md h-12 w-96 p-3"
-            placeholder="password"
+            placeholder="Password"
           />
           <Button label="Continue" className="w-full" />
           <div>
@@ -33,18 +33,18 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-between">
       <img
         src={flake1}
-        alt=""
         className="h-18 w-24 relative bottom-10 left-28 rotate-45"
       />
-      <img src={Planet} alt="Planet" className="h-[800px] w-[800px]" />
+      <img src={Planet} alt="Planet" className="size-[800px]"/>
       <img
         src={flake2}
-        alt=""
-        className="h-18 w-24 relative top-42 right-32 rotate-12"
+        className="h-18 w-24 relative top-42 right-36 rotate-12"
       />
-      <img src={flake3} alt="" className="h-18 w-24 relative top-60 right-96" />
+      <img src={flake3} className="h-18 w-24 relative right-96 top-56" />
+      </div>
     </section>
   );
 };
