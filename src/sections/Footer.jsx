@@ -5,9 +5,9 @@ import LinkedIn from "../assets/footer/linkedin.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-5">
-      <div className="flex justify-between px-10 mb-3">
-        <div>
+    <footer className="bg-black text-white py-5 mt-5 sm:py-5">
+      <div className="grid grid-cols-2  sm:flex justify-between px-10 mb-3">
+        <div className="mb-5 sm:mb-0">
           <h3 className="mb-4">Edu.io</h3>
           <ul>
             {edu_io.map((link) => (
@@ -48,14 +48,14 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col gap-3 justify-between items-center sm:flex-row">
         <div className="flex px-10 gap-3 cursor-pointer">
-          <img src={Twitter} alt="" className="size-8" />
-          <img src={Facebook} alt="" className="size-8" />
-          <img src={LinkedIn} alt="" className="size-8" />
+          <img src={Twitter} alt="Twitter" className="size-8" />
+          <img src={Facebook} alt="Facebook" className="size-8" />
+          <img src={LinkedIn} alt="Linked In" className="size-8" />
         </div>
         <p className="px-10">
-          Copyright@ {new Date().getFullYear()}{" "}
+          Copyright@ {new Date().getFullYear()}
           <a
             href="https://www.github.com/akashkennedy"
             target="_blank"
