@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center py-5 px-10">
+    <header className="flex justify-between items-center px-5 sm:px-10 py-5">
       <h1>Edu.io</h1>
-      <nav className="font-normal text-lg">
-        <ul className="flex justify-between items-center gap-10">
+      <nav className="sm:font-normal text-lg">
+        <ul className="hidden sm:flex justify-between items-center gap-10">
           <li>
             <NavLink to="/">
               Home
@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <HamburgerMenu className="hidden" />
+      <HamburgerMenu className="block size-10 sm:hidden"/>
     </header>
   );
 };

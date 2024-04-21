@@ -5,27 +5,27 @@ import Button from "../components/Button";
 
 const ContactUs = () => {
   return (
-    <section className="h-screen flex flex-col justify-around">
+    <section className="px-5 flex flex-col justify-around gap-10 sm:h-screen ">
       <div className="flex flex-col items-center justify-between gap-3">
         <h2 className="text-4xl font-semibold">Get in Touch!</h2>
         <h5 className="text-xl font-normal">Contact us for more info & demo</h5>
       </div>
-      <div className="flex justify-around">
-        <div className="flex flex-col items-center gap-3 justify-between">
-          <img src={Message} alt="Message" className="w-18 h-16" />
+      <div className="flex flex-col items-center justify-around gap-5 sm:justify-around sm:flex-row ">
+        <div className="flex flex-row justify-between gap-5 sm:flex-col items-center sm:gap-3">
+          <img src={Message} alt="Message" className="w-18 h-12 sm:h-16" />
           <p className="font-normal">abc@gmail.com</p>
         </div>
-        <div className="flex flex-col items-center justify-between">
-          <img src={Phone} alt="Phone" className="w-18 h-16" />
+        <div className="flex flex-row justify-between gap-5 sm:flex-col items-center sm:gap-3">
+          <img src={Phone} alt="Phone" className="w-14 h-12 sm:w-18 sm:h-16" />
           <p className="font-normal">123-456-709-0</p>
         </div>
-        <div className="flex flex-col items-center justify-between">
-          <img src={Location} alt="Location" className="w-18 h-16" />
+        <div className="flex flex-row justify-between gap-16 sm:flex-col items-center sm:gap-3">
+          <img src={Location} alt="Location" className="w-14 h-12 sm:w-18 sm:h-16" />
           <p className="font-normal">Abc,Def</p>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-10">
-        <div className="flex flex-col items-center justify-evenly h-full">
+      <div className="flex flex-col items-center sm:flex-row justify-evenly gap-10">
+        <div className="gap-5 flex flex-col items-center justify-evenly sm:h-full">
           <input
             type="text"
             required
@@ -40,13 +40,11 @@ const ContactUs = () => {
           />
         </div>
         <textarea
-          cols="30"
-          rows="8"
-          className="border-2 border-black rounded-md p-3 resize-none"
+          className="h-48 w-full border-2 border-black rounded-md p-3 resize-none sm:w-[500px]"
           placeholder="Your Message Here..."
         ></textarea>
       </div>
-      <Button label="Submit" className="mx-auto w-40" />
+      <Button label="Submit" className="mx-auto w-full sm:w-28" />
     </section>
   );
 };
