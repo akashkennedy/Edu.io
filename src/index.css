@@ -25,11 +25,11 @@ a {
   .active {
     text-decoration: underline;
     text-decoration-thickness: 7px;
-    text-decoration-color: #64FCD9;
+    text-decoration-color: #64fcd9;
     text-underline-offset: 3px;
   }
   .card-shadow {
-    box-shadow: 5px 4px 8px 0px rgba(0,0,0,0.74);
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.74);
   }
 }
 @tailwind components;
