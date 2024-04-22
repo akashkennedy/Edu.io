@@ -1,30 +1,30 @@
-import HamburgerMenu from "../components/HamburgerMenu";
 import { NavLink } from "react-router-dom";
-
+import HamburgerMenuIcon from "../assets/hamburgericon.png";
+import CloseIcon from "../assets/close.png";
+import { useState } from "react";
+import { navLinks } from "../constants/navLinks";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
     <header className="flex justify-between items-center px-5 sm:px-10 py-5">
       <h1>Edu.io</h1>
-      <nav className="sm:font-normal text-lg">
-        <ul className="hidden sm:flex justify-between items-center gap-10">
-          <li>
-            <NavLink to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink  to="/teachers">Teachers</NavLink>
-          </li>
-          <li>
-            <NavLink  to="/contactus">Contact Us</NavLink>
-          </li>
-          <li>
-            <NavLink  to="/signin">Sign In</NavLink>
-          </li>
+      <nav className="sm:font-normal text-l">
+        <ul className="flex items-center justify-between gap-10">
+         {navLinks.map(link => (
+          <li  key={link.id}><NavLink to={link.url} className="">{link.title}</NavLink></li>
+         ))}
         </ul>
       </nav>
-      <HamburgerMenu className="block size-10 sm:hidden"/>
+      <img
+        src={menu ? CloseIcon : HamburgerMenuIcon}
+        className="lg:hidden size-10 cursor-pointer"
+        onClick={handleMenu}
+      />
     </header>
   );
 };
