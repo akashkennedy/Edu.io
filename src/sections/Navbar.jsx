@@ -10,28 +10,38 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
-  if(menu) {
-    document.body.classList.add('overflow-hidden');
+  if (menu) {
+    document.body.classList.add("overflow-hidden");
   } else {
-    document.body.classList.remove('overflow-hidden');
+    document.body.classList.remove("overflow-hidden");
   }
 
   return (
     <header className="flex justify-between items-center px-5 sm:px-10 py-5">
       <h1>Edu.io</h1>
       <nav className="sm:font-normal text-l">
-        {menu ? <nav className="absolute bg-white left-0 top-20 h-full text-4xl w-full">
-        <ul className="flex flex-col gap-10 p-20 items-center">
-         {navLinks.map(link => (
-          <li onClick={handleMenu} key={link.id}><NavLink to={link.url} className="">{link.title}</NavLink></li>
-         ))}
-         </ul>
-        </nav> : ""}
-        
+        {menu && (
+          <nav className="absolute bg-white left-0 top-20 h-full text-4xl w-full">
+            <ul className="flex flex-col gap-10 p-20 items-center">
+              {navLinks.map((link) => (
+                <li onClick={handleMenu} key={link.id}>
+                  <NavLink to={link.url} className="block">
+                    {link.title}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+
         <ul className="hidden sm:flex items-center justify-between gap-10">
-         {navLinks.map(link => (
-          <li  key={link.id}><NavLink to={link.url} className="">{link.title}</NavLink></li>
-         ))}
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <NavLink to={link.url} className="">
+                {link.title}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
       <img

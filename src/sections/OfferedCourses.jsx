@@ -10,7 +10,7 @@ const OfferedCourses = () => {
       <img src={flake3} className="hidden sm:block h-18 w-24 absolute bottom-7 right-32"/>
       <img src={flake3} className="hidden sm:block h-18 w-24 absolute left-10 top-28"/>
       <div>
-        <h2 className="text-4xl mb-5 sm:text-7xl underline underline-offset-8 decoration-cyan decoration-8">Our Offered Courses</h2>
+        <h2 className="text-4xl mb-5 sm:text-7xl underline underline-offset-8  decoration-cyan decoration-8">Our Offered Courses</h2>
       </div>
       <div className="flex flex-col gap-5 sm:flex-row sm:gap-16">
         {CourseData.map(card => (
