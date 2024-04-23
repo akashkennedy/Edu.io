@@ -12,7 +12,7 @@ const App = () => {
   <main className="h-screen">
     <Navbar />
     <Routes>
-      <Route path="/home" element={<Home />}/>
+      <Route path="/" element={<Home />}/>
       <Route path="/teachers" element={<Teachers />}/>
       <Route path="/signin" element={<SignIn />}/>
       <Route path="/contact" element={<ContactUs />}/>
