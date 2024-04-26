@@ -1,17 +1,22 @@
+import Chemistry from '../assets/home/science.png';
+import Health from '../assets/home/health.png';
+import Music from '../assets/home/music.png';
+
+
 const CourseData = [
     {
         id: 1,
-        src: "../src/assets/home/science.png",
+        src: Chemistry,
         title: "Chemistry",
     },{
         id: 2,
-        src: "../src/assets/home/music.png",
+        src:Music,
         title: "Music",
     },
     {
         id: 3,
-        src: "../src/assets/home/health.png",
-        title: "Pharmacy",
+        src: Health,
+        title: "Health",
     }
 ]
 
